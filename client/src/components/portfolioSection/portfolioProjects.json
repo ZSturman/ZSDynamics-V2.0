@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "title": "The Shawshank Redemption",
+        "img": "https://i.imgur.com/2tZjJYF.jpg",
+        "description": "This is a description",
+        "primaryBtn": {
+            "text": "Watch Now",
+            "link": "https://www.netflix.com/title/70005379"
+        },
+        "secondaryBtn": {
+            "text": "More Info",
+            "link": "https://www.imdb.com/title/tt0111161/"
+        } 
+    },
+    {
+        "id": 2,
+        "title": "The Godfather",
+        "img": "https://i.imgur.com/Uzvny9I.jpg",
+        "description": "This is a description",
+        "primaryBtn": {
+            "text": "Watch Now",
+            "link": "https://www.netflix.com/title/60011152"
+        },
+        "secondaryBtn": {
+            "text": "More Info",
+            "link": "https://www.imdb.com/title/tt0068646/"
+        }
+    },
+    {
+        "id": 3,
+        "title": "The Dark Knight",
+        "img": "https://i.imgur.com/3jLPB46.jpg",
+        "description": "This is a description",
+        "primaryBtn": {
+            "text": "Watch Now",
+            "link": "https://www.netflix.com/title/70079583"
+        },
+        "secondaryBtn": {
+            "text": "More Info",
+            "link": "https://www.imdb.com/title/tt0468569/"
+        }
+    }
+]

@@ -1,0 +1,51 @@
+import { useState } from "react";
+import MainSection from "./components/mainSection/MainSection";
+import AboutSection from "./components/aboutSection/AboutSection";
+import SkillsSection from "./components/skillsSection/SkillsSection";
+import TimelineSection from "./components/timelineSection/TimelineSection";
+import ContactForm from "./components/contactSection/ContactForm";
+import Footer from "./components/footer/Footer";
+import FlashMessage from "./components/shared/FlashMessage";
+
+// Styles
+import "./App.scss";
+
+interface FlashMessageType {
+  message: string;
+  type: string;
+  active: boolean;
+}
+
+const App = () => {
+  const [flashMessage, setFlashMessage] = useState<FlashMessageType>();
+
+  const clearFlashMessage = () => {
+    if (flashMessage) {
+      setFlashMessage({
+        ...flashMessage,
+        active: false,
+      }); 
+    } else {
+      setFlashMessage({
+        message: '',
+        type: '',
+        active: false,
+      });
+    }
+    console.log("Flash message cleared");
+  };
+
+  return (
+    <div className="app-container">
+      <FlashMessage flashMessage={flashMessage} clearFlashMessage={clearFlashMessage}></FlashMessage>
+      <MainSection />
+      <AboutSection />
+      <SkillsSection />
+      <TimelineSection />
+      <ContactForm setFlashMessage={setFlashMessage}></ContactForm>
+      <Footer />
+    </div>
+  );
+};
+
+export default App;
