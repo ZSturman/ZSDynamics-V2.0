@@ -22,19 +22,11 @@ const App = () => {
   const [flashMessage, setFlashMessage] = useState<FlashMessageType>();
 
   const clearFlashMessage = () => {
-    if (flashMessage) {
-      setFlashMessage({
-        ...flashMessage,
-        active: false,
-      });
-    } else {
-      setFlashMessage({
-        message: "",
-        type: "",
-        active: false,
-      });
-    }
-    console.log("Flash message cleared");
+    setFlashMessage({
+      message: "",
+      type: "",
+      active: false,
+    });
   };
 
   return (
@@ -44,7 +36,7 @@ const App = () => {
           flashMessage={flashMessage}
           clearFlashMessage={clearFlashMessage}
         ></FlashMessage>
-        <MainSection/>
+        <MainSection />
         <AboutSection />
         <SkillsSection />
         <TimelineSection />

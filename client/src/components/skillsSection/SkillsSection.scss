@@ -5,6 +5,14 @@
     align-items: center;
     gap: 3rem;
 
+    @media screen and (max-width: 768px) {
+        gap: 1.5rem;
+    }
+
+    @media screen and (max-width: 480px) {
+        gap: 1rem;
+    }
+
 }
 
 .skill-category-list {
@@ -13,6 +21,10 @@
     flex-wrap: wrap;
     gap: 1rem;
     justify-content: center;
+
+    @media screen and (max-width: 768px) {
+        gap: .5rem;   
+    }
 
     .skill-category-item {
         display: flex;
@@ -25,6 +37,13 @@
         align-items: center;
         justify-content: center;
 
+        @media screen and (max-width: 768px) {
+            font-size: .75rem;
+        }
+
+        @media screen and (max-width: 480px) {
+            font-size: .65rem;
+        }
 
         &.active {
             background-color: var(--icon-color);
@@ -41,6 +60,10 @@
     gap: 1rem;
     justify-content: center;
 
+    @media screen and (max-width: 768px) {
+        gap: .5rem;   
+    }
+
     .skill-item {
         display: flex;
         gap: .5rem;
@@ -50,6 +73,14 @@
         font-size: .9rem;
         align-items: center;
         justify-content: center;
+
+        @media screen and (max-width: 768px) {
+            font-size: .75rem;
+        }
+
+        @media screen and (max-width: 480px) {
+            font-size: .65rem;
+        }
 
         &.highlighted {
             background-color: var(--icon-color);

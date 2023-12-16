@@ -4,6 +4,7 @@ from flask import Blueprint, jsonify, request, current_app, make_response
 from flask_restful import Api, Resource
 from flask_mail import Mail, Message
 from dotenv import load_dotenv
+import logging
 
 
 mail=Mail()
@@ -23,6 +24,7 @@ def record(state):
     app.config['MAIL_MAX_EMAILS'] = 5
 
     app.config['MAIL_USERNAME'] = os.environ.get('MAIL_USERNAME')
+
     app.config['MAIL_PASSWORD'] = os.environ.get('MAIL_PASSWORD')
     app.config['SECRET_KEY'] = os.environ.get('SECRET_KEY')
     app.config['MAIL_ASCII_ATTACHMENTS'] = True
@@ -38,16 +40,17 @@ class Mail(Resource):
     def post(self):
         try:
             data = request.get_json()
+            print("Data: ",data)
             msg = Message("Contact Form Submission",
                           sender=data['email'],
-                          recipients=["zasturman@gmail.com", "zacharysturman@zsdynamics.com"],
-                          subject=f"New Message from {data['name']} at {datetime.now().strftime('%m/%d/%Y %H:%M:%S')}")
+                          recipients=["zasturman@gmail.com", "zacharysturman@zsdynamics.com"])
             msg.body = f"Name: {data['name']}\nEmail: {data['email']}\nMessage: {data['message']}"
             mail.send(msg)
             response_data = {"message": "Email sent successfully"}
             return make_response(jsonify(response_data), 200)
 
         except Exception as e:
+            logging.error("Failed to send email", exc_info=True)
             return make_response(jsonify({"error": str(e)}), 500)
 
 

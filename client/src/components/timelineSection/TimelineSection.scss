@@ -62,10 +62,29 @@
 
         text-transform: uppercase;
 
+        @media screen and (max-width: 768px) {
+          font-size: .9rem;
+        }
+
+        @media screen and (max-width: 480px) {
+          font-size: .75rem;
+          
+        }
+
       }
 
       .job-title {
         font-size: 1.5rem;
+
+        @media screen and (max-width: 768px) {
+          font-size: 1.25rem;
+          
+        }
+
+        @media screen and (max-width: 480px) {
+          font-size: 1rem;
+          
+        }
 
       }
     }
@@ -93,6 +112,15 @@
         left: auto;
         list-style: none;
         margin-bottom: 2rem;
+
+        @media screen and (max-width: 768px) {
+          width: 100%;
+          
+        }
+
+        @media screen and (max-width: 480px) {
+          font-size: 12px;
+        }
 
 
       }

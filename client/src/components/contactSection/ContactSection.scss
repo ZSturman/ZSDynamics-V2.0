@@ -2,10 +2,16 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  //border: 3px solid var(--primary-text-color);
+  border: 3px solid var(--primary-text-color);
   padding: 5rem;
   border-radius: 14px;
   background-color: var(--secondary-bg-color);
+  max-width: 80vw;
+
+  @media screen and (max-width: 768px) {
+    padding: 2rem;
+  }
+  
 }
 
 .contact-form-header {
@@ -14,6 +20,14 @@
   font-weight: bold;
   margin-bottom: 20px;
   color: var(--primary-text-color);
+
+  @media screen and (max-width: 768px) {
+    font-size: 20px;
+  }
+
+  @media screen and (max-width: 480px) {
+    font-size: 18px;
+  }
 }
 
 .contact-form {
@@ -21,6 +35,7 @@
   flex-direction: column;
   align-items: center;
   gap: 1rem;
+  max-width: 80vw;
 
   .input-container {
     display: flex;
@@ -32,6 +47,14 @@
     width: 100%;
     font-size: 16px;
     color: #999999;
+
+    @media screen and (max-width: 768px) {
+      font-size: 14px;
+    }
+
+    @media screen and (max-width: 480px) {
+      font-size: 12px;
+    }
   }
 
   input[type="text"],
@@ -44,6 +67,14 @@
     border-radius: 14px;
     box-sizing: border-box;
     width: 100%;
+
+    @media screen and (max-width: 768px) {
+      padding: 10px 20px;
+    }
+
+    @media screen and (max-width: 480px) {
+      padding: 9px 15px;
+    }
 
     &:focus {
       border-color: #a7802c;
