@@ -3,25 +3,13 @@
         "name": "Python",
         "importName": "FaPython",
         "importFrom": "react-icons/fa6",
-        "category": ["backend", "analytics", "databaseManagement", "aI"]
-    },
-    {
-        "name": "CSS/ SCSS",
-        "importName": "IoLogoCss3",
-        "importFrom": "react-icons/io5",
-        "category": ["frontend"]
+        "category": ["backend", "analytics", "database", "ai", "cloud"]
     },
     {
         "name": "JavaScript",
         "importName": "SiJavascript",
         "importFrom": "react-icons/si",
-        "category": ["frontend", "backend", "analytics", "aI"]
-    },
-    {
-        "name": "React",
-        "importName": "FaReact",
-        "importFrom": "react-icons/fa6",
-        "category": ["frontend"]
+        "category": ["frontend", "backend", "analytics", "ai", "cloud"]
     },
     {
         "name": "TypeScript",
@@ -30,70 +18,154 @@
         "category": ["frontend", "backend", "analytics"]
     },
     {
-        "name": "Axios",
-        "importName": "FaCloud",
-        "importFrom": "react-icons/fa6",
-        "category": ["frontend", "backend"]
-    },
-    {
         "name": "Swift",
         "importName": "FaSwift",
         "importFrom": "react-icons/fa6",
-        "category": ["analytics", "frontend", "backend", "aI"]
-    },
-    {
-        "name": "Flask",
-        "importName": "SiFlask",
-        "importFrom": "react-icons/si",
-        "category": ["backend"]
+        "category": ["analytics", "frontend", "backend", "ai"]
     },
     {
         "name": "C#",
         "importName": "SiCsharp",
         "importFrom": "react-icons/si",
-        "category": ["backend", "frontend"]
-    }, 
-    {
-        "name": "Jinja2",
-        "importName": "SiJinja",
-        "importFrom": "react-icons/si",
-        "category": ["backend", "frontend"]
-    }, 
+        "category": ["backend", "frontend", "cloud"]
+    },
     {
         "name": "HTML",
         "importName": "FaHtml5",
         "importFrom": "react-icons/fa6",
         "category": ["frontend"]
     }, 
+
+
+
+
+    {
+        "name": "PostgreSQL",
+        "importName": "SiPostgresql",
+        "importFrom": "react-icons/si",
+        "category": ["database"]
+    }, 
+
+    {
+        "name": "MySQL",
+        "importName": "SiMysql",
+        "importFrom": "react-icons/si",
+        "category": ["database"]
+    }, 
+
+
+
+
+    {
+        "name": "React",
+        "importName": "FaReact",
+        "importFrom": "react-icons/fa6",
+        "category": ["frontend"]
+    },
+
+
+
+
+
+    {
+        "name": "Flask",
+        "importName": "SiFlask",
+        "importFrom": "react-icons/si",
+        "category": ["backend", "cloud"]
+    },
+
+
+
+
     {
         "name": "Node.js",
         "importName": "FaNodeJs",
         "importFrom": "react-icons/fa6",
+        "category": ["backend", "frontend", "cloud"]
+    }, 
+
+
+
+
+
+    {
+        "name": "AWS",
+        "importName": "FaAws",
+        "importFrom": "react-icons/fa6",
+        "category": ["backend", "frontend", "database", "ai", "cloud"]
+    },
+    {
+        "name": "GTM",
+        "importName": "FaGoogle",
+        "importFrom": "react-icons/fa6",
+        "category": ["analytics"]
+    },
+
+
+
+
+
+
+
+
+    
+
+
+
+    
+
+    {
+        "name": "CSS",
+        "importName": "IoLogoCss3",
+        "importFrom": "react-icons/io5",
+        "category": ["frontend"]
+    },
+    {
+        "name": "Sassy CSS",
+        "importName": "SiSass",
+        "importFrom": "react-icons/si",
+        "category": ["frontend"]
+    },
+
+
+    {
+        "name": "Axios",
+        "importName": "FaCloud",
+        "importFrom": "react-icons/fa6",
+        "category": ["frontend", "backend"]
+    },
+ 
+    {
+        "name": "Jinja2",
+        "importName": "SiJinja",
+        "importFrom": "react-icons/si",
         "category": ["backend", "frontend"]
     }, 
+
+
     {
         "name": "OpenCV",
         "importName": "SiOpencv",
         "importFrom": "react-icons/si",
-        "category": ["analytics", "aI"]
+        "category": ["analytics", "ai"]
     },
     {
         "name": "PyTorch",
         "importName": "SiPytorch",
         "importFrom": "react-icons/si",
-        "category": ["aI"]
+        "category": ["ai"]
     },
     {
         "name": "TensorFlow",
         "importName": "SiTensorflow",
         "importFrom": "react-icons/si",
-        "category": ["aI"]
+        "category": ["ai"]
     },
     {
         "name": "Pandas",
         "importName": "SiPandas",
         "importFrom": "react-icons/si",
-        "category": ["aI"]
+        "category": ["ai"]
     },
     {
         "name": "PyQT",
@@ -107,35 +179,25 @@
         "importFrom": "react-icons/fa6",
         "category": ["frontend"]
     },
-    {
-        "name": "PostgreSQL",
-        "importName": "SiPostgresql",
-        "importFrom": "react-icons/si",
-        "category": ["databaseManagement"]
-    }, 
+
     {
         "name": "Three.js",
         "importName": "SiThreedotjs",
         "importFrom": "react-icons/si",
         "category": ["frontend"]
     },
-    {
-        "name": "MySQL",
-        "importName": "SiMysql",
-        "importFrom": "react-icons/si",
-        "category": ["databaseManagement"]
-    }, 
+
     {
         "name": "MongoDB",
         "importName": "SiMongodb",
         "importFrom": "react-icons/si",
-        "category": ["databaseManagement"]
+        "category": ["database"]
     },
     {
         "name": "Redis",
         "importName": "SiRedis",
         "importFrom": "react-icons/si",
-        "category": ["databaseManagement"]
+        "category": ["database"]
     }, 
     {
         "name": "Git",
@@ -147,25 +209,14 @@
         "name": "Docker",
         "importName": "FaDocker",
         "importFrom": "react-icons/fa6",
-        "category": ["backend", "frontend"]
+        "category": ["backend", "frontend", "cloud"]
     },
     {
         "name": "Kubernetes",
         "importName": "SiKubernetes",
         "importFrom": "react-icons/si",
-        "category": ["backend", "frontend"]
-    },
-    {
-        "name": "AWS",
-        "importName": "FaAws",
-        "importFrom": "react-icons/fa6",
-        "category": ["backend", "frontend", "databaseManagement", "aI"]
-    },
-    {
-        "name": "Google Tag Manager",
-        "importName": "FaGoogle",
-        "importFrom": "react-icons/fa6",
-        "category": ["analytics"]
+        "category": ["backend", "frontend", "cloud"]
     }
+
 
 ]

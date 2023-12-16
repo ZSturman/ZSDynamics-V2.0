@@ -1,53 +1,81 @@
 .about-container {
-    display: flex;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding-right: 7vw;
+
+  @media screen and (min-width: 992px) {
     flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
-    padding-right: 7vw;
+  }
 
+  img {
+    order: 1;
+    display: flex;
+    max-width: 43%;
+    border-radius: 14px;
+    filter: saturate(50%);
 
-    img {
-        display: flex;
-        max-width: 43%;
-        border-radius: 14px;
-        filter: saturate(50%);
+    @media screen and (min-width: 992px) {
+      order: 2;
+    }
+  }
 
+  .about-text-container {
+    order: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+
+    @media screen and (min-width: 992px) {
+      order: 1;
+      align-items: start;
     }
 
-    .about-text-container {
-        display: flex;
-        flex-direction: column;;
+    .tagline {
+      color: rgb(197, 197, 197);
+    }
+    .name {
+      font-size: 3rem;
+      font-weight: 700;
+    }
+
+    .about-content {
+      text-align: left;
+      align-items: end;
+      justify-content: center;
+      margin: 1rem 0;
+
+      @media screen and (min-width: 992px) {
+        text-align: right;
+      }
+    }
+
+    .bottom-text-and-btns {
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      text-align: start;
+      width: 100%;
+
+      @media screen and (min-width: 992px) {
         align-items: end;
+        text-align: end;
+      }
 
-       
-        .tagline {
-            color: rgb(197, 197, 197);
-        }
-        .name {
-            font-size: 3rem;
-            font-weight: 700;
-        }
-
-        .about-content {
-            text-align: right;
-            align-items: end;
-            justify-content: center;
-            margin: 1rem 0;
-        }
-
-        .btn-container {
-            display: flex;
-            flex-direction: row;
-            gap: 2rem;
-            align-items: center;
-            justify-content: center;
-            padding: .5rem;
-        }
-
+      .btn-container {
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+        align-items: center;
+        justify-content: center;
+        padding: 0.5rem;
+      }
     }
+  }
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }

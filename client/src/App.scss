@@ -74,8 +74,9 @@ section {
     min-height: 100vh;
     display: flex;
     align-items: center;
-
     max-width: 1000px;
+
+    padding: 2rem 0;
 }
 
 .app-container {
@@ -133,7 +134,7 @@ section {
     .social-media-btn {
         font-size: 2rem;
         border-radius: 50%;
-        color: var(--primary-btn-color);
+        color: var(--icon-color);
         display: flex;
         justify-content: center;
         align-items: center;

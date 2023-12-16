@@ -55,7 +55,7 @@ const ContactForm: React.FC<ContactFormProps> = ({ setFlashMessage }) => {
   };
 
   return (
-    <section>
+    <section id="contact">
       <div className="contact-form-container">
         <div className="contact-form-header">Contact Me</div>
         <form className="contact-form" onSubmit={handleSubmit}>

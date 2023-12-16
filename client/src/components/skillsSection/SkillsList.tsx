@@ -1,4 +1,4 @@
-import React from "react";
+import { useState } from "react";
 import SkillItems from "./skillItems.json";
 import * as FaIcons from "react-icons/fa6";
 import * as IoIcons from "react-icons/io5";
@@ -8,10 +8,33 @@ interface IconMapping {
   [key: string]: React.ComponentType;
 }
 
+interface ActiveCategoryState {
+  category: string | null;
+  type: 'click' | 'hover' | null;
+}
+
 const SkillsList = () => {
+  const [activeState, setActiveState] = useState<ActiveCategoryState>({ category: null, type: null });
+
+  const handleEvent = (type: 'click' | 'hover', category: string) => {
+    if (type === 'click') {
+      setActiveState({ category, type });
+    } else if (type === 'hover') {
+      setActiveState({ category, type });
+    }
+  };
+
+  const handleMouseLeave = () => {
+    if (activeState.type !== 'click') {
+      setActiveState({ category: null, type: null });
+    }
+  };
+
+
   const iconMapping: IconMapping = {
     FaPython: FaIcons.FaPython,
     IoLogoCss3: IoIcons.IoLogoCss3,
+    SiSass: SiIcons.SiSass,
     SiJavascript: SiIcons.SiJavascript,
     FaReact: FaIcons.FaReact,
     SiTypescript: SiIcons.SiTypescript,
@@ -37,44 +60,45 @@ const SkillsList = () => {
     SiKubernetes: SiIcons.SiKubernetes,
     FaAws: FaIcons.FaAws,
     FaGoogle: FaIcons.FaGoogle,
+    analytics: SiIcons.SiGoogleanalytics,
+    backend: FaIcons.FaGear,
+    frontend: FaIcons.FaPalette,
+    cloud: FaIcons.FaCloud,
+    database: FaIcons.FaDatabase,
+    ai: FaIcons.FaBrain,
   };
+
+  const categoryList = ["analytics", "backend", "frontend", "cloud", "database", "ai"]
 
   return (
     <div className="skills-list-and-categories">
       <h2>Skills</h2>
 
-      <div className="skill-category-list">
-        <div className="skill-category-item">
-          <SiIcons.SiGoogleanalytics />
-          <div className="category-name">Analytics</div>
-        </div>
-        <div className="skill-category-item">
-          <FaIcons.FaGear />
-          <div className="category-name">Backend</div>
-        </div>
-        <div className="skill-category-item">
-          <FaIcons.FaPalette />
-          <div className="category-name">Frontend</div>
-        </div>
-        <div className="skill-category-item">
-          <FaIcons.FaCloud />
-          <div className="category-name">Cloud</div>
-        </div>
-        <div className="skill-category-item">
-          <FaIcons.FaDatabase />
-          <div className="category-name">Database Management</div>
-        </div>
-        <div className="skill-category-item">
-          <FaIcons.FaBrain />
-          <div className="category-name">AI</div>
-        </div>
+      <div className="skill-category-list" onMouseLeave={handleMouseLeave}>
+        {categoryList.map((category) => {
+          const IconComponent = iconMapping[category];
+          return (
+            <div
+              className={`skill-category-item ${category === activeState.category ? "active" : ""}`}
+              onClick={() => handleEvent('click', category)}
+              onMouseEnter={() => handleEvent('hover', category)}
+            >
+              {IconComponent && <IconComponent />}
+              <div className="category-name">{category}</div>
+            </div>
+          );
+        })}
       </div>
 
       <div className="skills-list">
         {SkillItems.map((skill) => {
           const IconComponent = iconMapping[skill.importName];
+          const isHighlighted =
+          activeState && activeState.category
+            ? skill.category.includes(activeState.category)
+            : false;
           return (
-            <div className="skill-item">
+            <div className={`skill-item ${isHighlighted ? "highlighted" : ""}`}>
               {IconComponent && <IconComponent />}
               {skill.name}
             </div>

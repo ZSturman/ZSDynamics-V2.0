@@ -5,7 +5,7 @@ import './MainSection.scss'
 
 const MainSection = () => {
     return (
-        <section>
+        <section id="main">
             <NameTitleIcon />
         </section>
     )

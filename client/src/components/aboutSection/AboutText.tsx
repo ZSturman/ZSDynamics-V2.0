@@ -28,18 +28,20 @@ const AboutText = () => {
           welfare and advancing autism research.
         </p>
       </div>
-      <div>
+
+
+      <div className="bottom-text-and-btns">
         <p>
           Discover more of my work, reach out for a chat, or peruse my resume:
         </p>
-      </div>
+
       <div className="btn-container">
         <a href={Resume} target="_blank" className="btn-secondary btn">
           Resume
         </a>
-
-        <button className="btn-primary btn">Connect</button>
+        <a className="btn-primary btn" href="#contact">Connect</a>
       </div>
+    </div>
     </div>
   );
 };

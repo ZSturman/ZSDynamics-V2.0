@@ -1,7 +1,6 @@
 from flask import send_from_directory, redirect
 import os
 
-
 def init_routes(app):    
     @app.route('/', defaults={'path': ''})
     @app.route('/<path:path>')
@@ -12,6 +11,6 @@ def init_routes(app):
             return send_from_directory(app.static_folder, 'index.html')
         
         
-    @app.route('/outdated_portfolio')
+    """ @app.route('/outdated_portfolio')
     def redirect_to_old_portfolio():
-        return redirect("http://zsdynamics.com/outdated_portfolio", code=302)
+        return redirect("http://zsdynamics.com/outdated_portfolio", code=302) """

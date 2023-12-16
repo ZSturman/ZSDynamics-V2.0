@@ -5,7 +5,7 @@ import "./SkillsSection.scss";
 
 const SkillsSection = () => {
   return (
-    <section>
+    <section id="skills">
       <div>
         <SkillsList />
       </div>

@@ -1,4 +1,6 @@
 import { useState } from "react";
+import Container from "react-bootstrap/Container";
+
 import MainSection from "./components/mainSection/MainSection";
 import AboutSection from "./components/aboutSection/AboutSection";
 import SkillsSection from "./components/skillsSection/SkillsSection";
@@ -24,11 +26,11 @@ const App = () => {
       setFlashMessage({
         ...flashMessage,
         active: false,
-      }); 
+      });
     } else {
       setFlashMessage({
-        message: '',
-        type: '',
+        message: "",
+        type: "",
         active: false,
       });
     }
@@ -36,15 +38,20 @@ const App = () => {
   };
 
   return (
-    <div className="app-container">
-      <FlashMessage flashMessage={flashMessage} clearFlashMessage={clearFlashMessage}></FlashMessage>
-      <MainSection />
-      <AboutSection />
-      <SkillsSection />
-      <TimelineSection />
-      <ContactForm setFlashMessage={setFlashMessage}></ContactForm>
-      <Footer />
-    </div>
+    <Container>
+      <div className="app-container">
+        <FlashMessage
+          flashMessage={flashMessage}
+          clearFlashMessage={clearFlashMessage}
+        ></FlashMessage>
+        <MainSection/>
+        <AboutSection />
+        <SkillsSection />
+        <TimelineSection />
+        <ContactForm setFlashMessage={setFlashMessage}></ContactForm>
+        <Footer />
+      </div>
+    </Container>
   );
 };
 

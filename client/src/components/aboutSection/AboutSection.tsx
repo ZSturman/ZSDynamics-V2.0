@@ -1,5 +1,4 @@
 import AboutText from "./AboutText";
-//import headshotImage from "../../public/ZacharySturmanHeadshot.png";
 import chopsticksImage from "../../public/ZacharySturmanWithChopsticks.jpg"
 
 
@@ -8,8 +7,9 @@ import "./About.scss";
 
 const AboutSection = () => {
   return (
-    <section>
-      <div className="about-container">
+    <section id="about">
+      <div className="about-container" data-aos="fade-down"
+            data-aos-duration="1500" data-aos-easing="ease-in-out-back">
           <AboutText />
           <img src={chopsticksImage} alt="Image of Zachary Sturman" />
       </div>

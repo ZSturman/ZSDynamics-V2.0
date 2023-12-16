@@ -8,6 +8,8 @@ from app.mail.mail_config import mail_bp
 def create_app():
     load_dotenv()
 
+    print("create_app")
+
     app = Flask(__name__)
 
     static_folder = os.environ.get('STATIC_FOLDER')

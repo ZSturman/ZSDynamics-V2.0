@@ -40,9 +40,10 @@ class Mail(Resource):
             data = request.get_json()
             msg = Message("Contact Form Submission",
                           sender=data['email'],
-                          recipients=["zasturman@gmail.com"])
+                          recipients=["zasturman@gmail.com", "zacharysturman@zsdynamics.com"],
+                          subject=f"New Message from {data['name']} at {datetime.now().strftime('%m/%d/%Y %H:%M:%S')}")
             msg.body = f"Name: {data['name']}\nEmail: {data['email']}\nMessage: {data['message']}"
-
+            mail.send(msg)
             response_data = {"message": "Email sent successfully"}
             return make_response(jsonify(response_data), 200)
 

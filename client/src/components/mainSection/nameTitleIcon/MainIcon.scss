@@ -1,97 +1,92 @@
 @keyframes rotate {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(360deg);
-    }
+  from {
+    transform: rotate(0deg);
   }
-  
-  .main-icon {
-    position: relative;
-    fill: transparent;
-
-
+  to {
+    transform: rotate(360deg);
   }
-  
-  .main-icon-computer {
-    width: 100%;
-    height: 100%;
+}
 
-    path {
-        fill: var(--icon-color);
-      }
+.main-icon-container {
+  position: relative;
+  fill: transparent;
+}
+.main-icon-computer {
 
-      rect {
-        stroke: var(--icon-color);
-        stroke-width: 19;
-      }
+
+  path {
+    fill: var(--icon-color);
   }
-  
-  .gear-one {
-    position: absolute;
-    left: 20.5px;
-    top: 48.229px;
-    fill: transparent;
-    animation: rotate 22s linear infinite;
 
-    circle {
-        stroke: var(--icon-color);
-        stroke-width: 5;
-    }
-
-    rect {
-        fill: var(--icon-color);
-    }
+  rect {
+    stroke: var(--icon-color);
+    stroke-width: 19;
   }
-  
-  .gear-two {
-    position: absolute;
-    left: 103px;
-    top: 26.229px;
-    fill: transparent;
+}
 
-    circle {
-        stroke: var(--icon-color);
-        stroke-width: 2;
-    }
+.gear-one {
+  position: absolute;
+  left: 20.5px;
+  top: 48.229px;
+  fill: transparent;
+  animation: rotate 22s linear infinite;
 
-    rect {
-        fill: var(--icon-color);
-    }
+  circle {
+    stroke: var(--icon-color);
+    stroke-width: 5;
   }
-  
-  .gear-three {
-    position: absolute;
-    left: 132px;
-    top: 106.229px;
 
-    fill: transparent;
-
-    circle {
-        stroke: var(--icon-color);
-        stroke-width: 3;
-    }
-
-    rect {
-        fill: var(--icon-color);
-    }
+  rect {
+    fill: var(--icon-color);
   }
-  
-  .gear-four {
-    position: absolute;
-    left: 131px;
-    top: 33.229px;
+}
 
-    fill: transparent;
+.gear-two {
+  position: absolute;
+  left: 103px;
+  top: 26.229px;
+  fill: transparent;
 
-    circle {
-        stroke: var(--icon-color);
-        stroke-width: 10;
-    }
-
-    rect {
-        fill: var(--icon-color);
-    }
+  circle {
+    stroke: var(--icon-color);
+    stroke-width: 2;
   }
-  
+
+  rect {
+    fill: var(--icon-color);
+  }
+}
+
+.gear-three {
+  position: absolute;
+  left: 132px;
+  top: 106.229px;
+
+  fill: transparent;
+
+  circle {
+    stroke: var(--icon-color);
+    stroke-width: 3;
+  }
+
+  rect {
+    fill: var(--icon-color);
+  }
+}
+
+.gear-four {
+  position: absolute;
+  left: 131px;
+  top: 33.229px;
+
+  fill: transparent;
+
+  circle {
+    stroke: var(--icon-color);
+    stroke-width: 10;
+  }
+
+  rect {
+    fill: var(--icon-color);
+  }
+}

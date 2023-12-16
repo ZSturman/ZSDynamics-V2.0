@@ -1,9 +1,17 @@
 .name-title-icon-container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 20px;
+
+    @media screen and (min-width: 768px) {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+      }
+    
 }
 
 .name-title-container{
@@ -21,14 +29,14 @@
         justify-content: top;
         align-items: flex-start;
 
+        
+
         .pre-name {
-            line-height: 0rem;
-            
+           
         }
 
         .name {
             font-size: 5rem;
-            
         }
 
         .one-line {
@@ -37,7 +45,6 @@
             justify-content: flex-start;
             align-items:baseline;
             gap: 1rem;
-            line-height: .5rem;
 
             .pre-title {
                 

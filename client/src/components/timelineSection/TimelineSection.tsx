@@ -10,7 +10,7 @@ import "./TimelineSection.scss";
 
 const TimelineSection = () => {
   return (
-    <section>
+    <section id="experience">
       <div className="experience-list">
         {ExperienceList.map((experience) => {
           return (
