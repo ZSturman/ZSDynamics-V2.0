@@ -1,14 +1,30 @@
-import NameTitleIcon from "./nameTitleIcon/NameTitleIcon"
+import NameTitleIcon from "./nameTitleIcon/NameTitleIcon";
+import { VscFoldDown } from "react-icons/vsc";
 
 // Styles
-import './MainSection.scss'
+import "./MainSection.scss";
 
 const MainSection = () => {
-    return (
-        <section id="main">
-            <NameTitleIcon />
-        </section>
-    )
-}
+  const scrollToSection = (sectionId: string) => {
+    const section = document.querySelector(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  };
 
-export default MainSection
+  return (
+    <section id="main">
+      <div className="main-section-container">
+        <NameTitleIcon />
+        <button
+          className="scroll-down-arrow"
+          onClick={() => scrollToSection("#about")}
+        >
+          <VscFoldDown />
+        </button>
+      </div>
+    </section>
+  );
+};
+
+export default MainSection;

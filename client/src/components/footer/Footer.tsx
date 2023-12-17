@@ -10,6 +10,13 @@ const Footer = () => {
   const emailBody: string =
     "Hi Zachary, I recently found your profile and I'm intrigued by your expertise in the field. I'd love to connect and learn more about your experience and what you're looking for in your next role. Let me know what works best for you!";
 
+  const scrollToSection = (sectionId: string) => {
+    const section = document.querySelector(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <footer>
       <div className="footer-container">
@@ -27,22 +34,30 @@ const Footer = () => {
               <div className="footer-link-header">Nav</div>
               <ul>
                 <li>
-                  <a href="#main">Home</a>
+                  <button className="footer-link" onClick={() => scrollToSection("#main")}>Home</button>
                 </li>
                 <li>
-                  <a href="#about">About</a>
+                  <button className="footer-link" onClick={() => scrollToSection("#about")}>
+                    About
+                  </button>
                 </li>
                 <li>
-                  <a href="#skills">Skills</a>
+                  <button className="footer-link" onClick={() => scrollToSection("#skills")}>
+                    Skills
+                  </button>
                 </li>
                 <li>
-                  <a href="#experience">Experience</a>
+                  <button className="footer-link" onClick={() => scrollToSection("#experience")}>
+                    Experience
+                  </button>
                 </li>
                 <li>
-                  <a href="#contact">Contact</a>
+                  <button className="footer-link" onClick={() => scrollToSection("#contact")}>
+                    Contact
+                  </button>
                 </li>
                 <li>
-                  <a href={Resume} target="_blank" className="social-media-btn">
+                  <a href={Resume} target="_blank" className="foot-link">
                     Resume
                   </a>
                 </li>

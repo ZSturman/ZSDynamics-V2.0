@@ -1,5 +1,6 @@
 import SocialMediaBtns from "../../socialMediaBtns/SocialMediaBtns";
 
+
 const NameTitle = () => {
   return (
     <div className="name-title-container">
@@ -13,6 +14,7 @@ const NameTitle = () => {
         <div className="tag-line">making computers do stuff since 2017</div>
       </div>
       <SocialMediaBtns />
+
     </div>
   );
 };
