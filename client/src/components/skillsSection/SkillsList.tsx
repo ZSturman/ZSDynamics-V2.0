@@ -1,6 +1,7 @@
 import { useState } from "react";
 import SkillItems from "./skillItems.json";
-import * as FaIcons from "react-icons/fa6";
+import * as FaIcons6 from "react-icons/fa6";
+import * as FaIcons from "react-icons/fa";
 import * as IoIcons from "react-icons/io5";
 import * as SiIcons from "react-icons/si";
 
@@ -32,43 +33,44 @@ const SkillsList = () => {
 
 
   const iconMapping: IconMapping = {
-    FaPython: FaIcons.FaPython,
+    FaPython: FaIcons6.FaPython,
     IoLogoCss3: IoIcons.IoLogoCss3,
     SiSass: SiIcons.SiSass,
     SiJavascript: SiIcons.SiJavascript,
-    FaReact: FaIcons.FaReact,
+    FaReact: FaIcons6.FaReact,
     SiTypescript: SiIcons.SiTypescript,
-    FaCloud: FaIcons.FaCloud,
-    FaSwift: FaIcons.FaSwift,
+    FaCloud: FaIcons6.FaCloud,
+    FaSwift: FaIcons6.FaSwift,
     SiFlask: SiIcons.SiFlask,
     SiCsharp: SiIcons.SiCsharp,
     SiJinja: SiIcons.SiJinja,
-    FaHtml5: FaIcons.FaHtml5,
-    FaNodeJs: FaIcons.FaNodeJs,
+    FaHtml5: FaIcons6.FaHtml5,
+    FaNodeJs: FaIcons6.FaNodeJs,
     SiOpencv: SiIcons.SiOpencv,
     SiPytorch: SiIcons.SiPytorch,
     SiTensorflow: SiIcons.SiTensorflow,
     SiPandas: SiIcons.SiPandas,
-    FaBootstrap: FaIcons.FaBootstrap,
+    FaBootstrap: FaIcons6.FaBootstrap,
     SiPostgresql: SiIcons.SiPostgresql,
     SiThreedotjs: SiIcons.SiThreedotjs,
     SiMysql: SiIcons.SiMysql,
     SiMongodb: SiIcons.SiMongodb,
     SiRedis: SiIcons.SiRedis,
-    FaGitAlt: FaIcons.FaGitAlt,
-    FaDocker: FaIcons.FaDocker,
+    FaGitAlt: FaIcons6.FaGitAlt,
+    FaDocker: FaIcons6.FaDocker,
     SiKubernetes: SiIcons.SiKubernetes,
-    FaAws: FaIcons.FaAws,
-    FaGoogle: FaIcons.FaGoogle,
+    FaAws: FaIcons6.FaAws,
+    FaGoogle: FaIcons6.FaGoogle,
     analytics: SiIcons.SiGoogleanalytics,
-    backend: FaIcons.FaGear,
-    frontend: FaIcons.FaPalette,
-    cloud: FaIcons.FaCloud,
-    database: FaIcons.FaDatabase,
-    ai: FaIcons.FaBrain,
+    backend: FaIcons6.FaGear,
+    frontend: FaIcons6.FaPalette,
+    cloud: FaIcons6.FaCloud,
+    database: FaIcons6.FaDatabase,
+    ai: FaIcons6.FaBrain,
+    r: FaIcons.FaRProject,
   };
 
-  const categoryList = ["analytics", "backend", "frontend", "cloud", "database", "ai"]
+  const categoryList = ["Cloud, Deployment & Version Control", "Data Management & Analysis", "Core Programming", "Web Development & Frameworks"]
 
   return (
     <div className="skills-list-and-categories">
@@ -89,6 +91,7 @@ const SkillsList = () => {
           );
         })}
       </div>
+
 
       <div className="skills-list">
         {SkillItems.map((skill) => {

@@ -1,54 +1,51 @@
 [
-  {
-    "title": "Full-Stack Developer",
-    "company": "Evo Sol LLC",
-    "startMonth": "Mar",
-    "startYear": "2023",
-    "endMonth": "",
-    "endYear": "",
-    "currentEmployer": true,
-    "color": "#a1d1e5",
-    "textColor": "#c8e0ea",
-
-    "description": "Implemented Flask and JavaScript to create responsive web elements and server-side logic, enhancing application performance through streamlined data handling and API integration, while leading the development of an AI NLP web application using React, Flask, and JavaScript, focusing on full-stack optimization for improved system architecture and user experience."
-  },
-  {
-    "title": "Software Developer",
-    "company": "The Knife Grinder",
-    "startMonth": "Nov",
-    "startYear": "2021",
-    "endMonth": "Oct",
-    "endYear": "2023",
-    "currentEmployer": false,
-    "color": "#87adbe",
-    "textColor": "#b7c7cf",
-
-    "description": "Played a pivotal role in the successful sale of an Alaskan business by enhancing its online presence and profitability through effective SEO and website optimization, leading to higher search rankings and increased user engagement, and utilized Python, R, and SQL for market and customer behavior analysis, providing insights that informed marketing strategies and business improvement."
-  },
-  {
-    "title": "Speech Recognition and Aanalysis Specialist",
-    "company": "Chatterbox",
-    "startMonth": "Feb",
-    "startYear": "2023",
-    "endMonth": "June",
-    "endYear": "2023",
-    "currentEmployer": false,
-    "color": "#5c7883",
-    "textColor": "#919da1",
-
-    "description": "Developed a Python and JavaScript-based NLP console application for analyzing speech patterns and identifying speakers in recorded conversations, integrating an API for precise audio transcription and timing to facilitate accurate speech analysis and speaker identification."
-  },
-  {
-    "title": "Data Analyst",
-    "company": "Ameristar Casino",
-    "startMonth": "Aug",
-    "startYear": "2022",
-    "endMonth": "Dec",
-    "endYear": "2022",
-    "currentEmployer": false,
-    "color": "#36474e",
-    "textColor": "#6b7377",
-
-    "description": "Engineered a data analysis system to optimize employee retention and tip distribution by automating analysis pipelines and developing a web-based data management platform, coupled with extensive statistical analysis using Python, R, and SQL to identify key factors affecting employee satisfaction and tip impacts."
-  }
-]
+    {
+      "title": "React Developer",
+      "company": "Evo Sol LLC",
+      "startMonth": "2023",
+      "startYear": "",
+      "endMonth": "Present",
+      "endYear": "",
+      "currentEmployer": true,
+      "color": "#a1d1e5",
+      "textColor": "#c8e0ea",
+      "description": "Led the development of an AI NLP web application focusing on full-stack optimization with technologies like React, Flask, and TypeScript, ensuring efficient system architecture and improved user experience. Implemented Flask and JavaScript to create responsive web elements and server-side logic, streamlining data handling and API integration for enhanced application performance."
+    },
+    {
+      "title": "Software Developer",
+      "company": "The Knife Grinder",
+      "startMonth": "Nov",
+      "startYear": "2021",
+      "endMonth": "Oct",
+      "endYear": "2023",
+      "currentEmployer": false,
+      "color": "#87adbe",
+      "textColor": "#b7c7cf",
+      "description": "Played a pivotal role in the successful sale of an Alaskan business by strategically enhancing its online presence and profitability. Achieved this through effective SEO and website optimization techniques leading to significantly higher search rankings and increased user engagement. Utilized Python, R, and SQL for market and customer behavior analysis, providing insights for marketing strategies and business improvement. Employed data manipulation and visualization tools like Pandas, Matplotlib, and MySQL aiding in decision-making and reporting processes."
+    },
+    {
+      "title": "Web Developer and Analysis Specialist",
+      "company": "Chatterbox",
+      "startMonth": "Feb",
+      "startYear": "2023",
+      "endMonth": "Jun",
+      "endYear": "2023",
+      "currentEmployer": false,
+      "color": "#5c7883",
+      "textColor": "#919da1",
+      "description": "Developed a Python and JavaScript-based NLP console application for analyzing speech patterns and identifying speakers in recorded conversations. Integrated an API for precise audio transcription and timing, facilitating accurate speech analysis and speaker identification. Utilized data processing and visualization tools such as Pandas, NumPy, and Matplotlib to enhance the application's statistical analysis capabilities."
+    },
+    {
+      "title": "Data Analyst",
+      "company": "Ameristar Casino",
+      "startMonth": "Aug",
+      "startYear": "2022",
+      "endMonth": "Dec",
+      "endYear": "2022",
+      "currentEmployer": false,
+      "color": "#36474e",
+      "textColor": "#6b7377",
+      "description": "Engineered a data analysis system to optimize employee retention and tip distribution involving automation of analysis pipelines and development of a web-based data management platform. Performed extensive statistical analysis using Python, R, and SQL to identify key factors affecting employee satisfaction and tip impacts. Created interactive visualizations using Matplotlib and Streamlit, facilitating effective communication of complex data to stakeholders and supporting HR decision-making."
+    }
+  ]
+  
