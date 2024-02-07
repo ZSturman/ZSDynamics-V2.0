@@ -4,6 +4,7 @@ import Container from "react-bootstrap/Container";
 import MainSection from "./components/mainSection/MainSection";
 import AboutSection from "./components/aboutSection/AboutSection";
 import SkillsSection from "./components/skillsSection/SkillsSection";
+import RecentProject from "./components/recentProject/RecentProject"
 import TimelineSection from "./components/timelineSection/TimelineSection";
 import ContactForm from "./components/contactSection/ContactForm";
 import Footer from "./components/footer/Footer";
@@ -39,6 +40,7 @@ const App = () => {
         <MainSection />
         <AboutSection />
         <SkillsSection />
+        <RecentProject />
         <TimelineSection />
         <ContactForm setFlashMessage={setFlashMessage}></ContactForm>
         <Footer />
