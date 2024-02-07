@@ -1,10 +1,19 @@
 .recent-project {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.description {
+
+
 }
 
 .project-title {
-    text-align: center;
+    justify-content: center;
 }
 
 .video-and-description {
@@ -12,29 +21,25 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    width: 100%;
 }
 
-.repo-button{
-    margin: 0 10px;
-    background-color: rgb(103, 125, 150);
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: background-color 0.3s;
+.video-player {
+    position: relative; // Add relative positioning here
+    width: 100%; // Full width of the parent
+    max-width: 640px; // Max width of the video player
+    margin: auto; // Center the video player if it's smaller than the parent
 
-    a {
-        color: white;
-        text-decoration: none;
+    // Maintain the aspect ratio of the video (16:9 in this example)
+    &:before {
+        content: '';
+        display: block;
+        padding-top: 56.25%; // 16:9 Aspect Ratio
     }
 
-    &:hover {
-        background-color: rgb(92, 152, 219);
+    .react-player {
+        position: absolute;
+        top: 0;
+        left: 0;
     }
-    
 }
