@@ -2,10 +2,10 @@
     {
       "title": "React Developer",
       "company": "Evo Sol LLC",
-      "startMonth": "2023",
-      "startYear": "",
-      "endMonth": "Present",
-      "endYear": "",
+      "startMonth": "May",
+      "startYear": "2023",
+      "endMonth": "Jan",
+      "endYear": "2024",
       "currentEmployer": true,
       "color": "#a1d1e5",
       "textColor": "#c8e0ea",
@@ -24,7 +24,7 @@
       "description": "Played a pivotal role in the successful sale of an Alaskan business by strategically enhancing its online presence and profitability. Achieved this through effective SEO and website optimization techniques leading to significantly higher search rankings and increased user engagement. Utilized Python, R, and SQL for market and customer behavior analysis, providing insights for marketing strategies and business improvement. Employed data manipulation and visualization tools like Pandas, Matplotlib, and MySQL aiding in decision-making and reporting processes."
     },
     {
-      "title": "Web Developer and Analysis Specialist",
+      "title": "Web Developer and Data Analysis Specialist",
       "company": "Chatterbox",
       "startMonth": "Feb",
       "startYear": "2023",

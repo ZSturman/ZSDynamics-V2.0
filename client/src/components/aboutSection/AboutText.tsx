@@ -4,14 +4,14 @@ const AboutText = () => {
   return (
     <div className="about-text-container">
       <div className="about-content">
-        <div>Hi, I'm Zachary,</div>
+        <div>Hi, I'm Zachary.</div>
         <p>
           I am a Software Engineer who has been mastering the art of Googling
           error messages for 5 years.
         </p>
         <p>
           Originally from Kansas City, Missouri, I'm currently soaking up the
-          sun near Brisbane, Australia, on a Holiday and Working Visa, valid
+          sun near Brisbane, Australia, on a Work and Holiday Visa, valid
           until October 2024.
         </p>
         <p>
