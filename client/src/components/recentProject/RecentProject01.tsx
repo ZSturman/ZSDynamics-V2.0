@@ -19,8 +19,17 @@ const RecentProject01 = () => {
           </div>
           <div className="description">
             <p>
-              Design for the landing page of a LLM distribution company.
+              Design for the landing page of a LLM distribution company. Built using: 
+              <ul>
+                <li>
+                  React
+                </li>
+                <li>
+                  NextJS
+                </li>
+              </ul>
             </p>
+            <p>Currently the site is unavailable to visit but if you'd like to learn more <a href="#contact">Contact me</a></p>
 
           </div>
         </div>
