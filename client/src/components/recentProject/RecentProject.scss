@@ -29,6 +29,7 @@
     width: 100%; // Full width of the parent
     max-width: 640px; // Max width of the video player
     margin: auto; // Center the video player if it's smaller than the parent
+    min-width: 200px;
 
     // Maintain the aspect ratio of the video (16:9 in this example)
     &:before {

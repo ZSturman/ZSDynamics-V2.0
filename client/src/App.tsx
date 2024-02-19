@@ -4,7 +4,8 @@ import Container from "react-bootstrap/Container";
 import MainSection from "./components/mainSection/MainSection";
 import AboutSection from "./components/aboutSection/AboutSection";
 import SkillsSection from "./components/skillsSection/SkillsSection";
-import RecentProject from "./components/recentProject/RecentProject"
+import RecentProject01 from "./components/recentProject/RecentProject01"
+import RecentProject02 from "./components/recentProject/RecentProject02"
 import TimelineSection from "./components/timelineSection/TimelineSection";
 import ContactForm from "./components/contactSection/ContactForm";
 import Footer from "./components/footer/Footer";
@@ -40,7 +41,8 @@ const App = () => {
         <MainSection />
         <AboutSection />
         <SkillsSection />
-        <RecentProject />
+        <RecentProject01 />
+        <RecentProject02 />
         <TimelineSection />
         <ContactForm setFlashMessage={setFlashMessage}></ContactForm>
         <Footer />
